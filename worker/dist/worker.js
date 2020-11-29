@@ -2689,7 +2689,7 @@ self.props = {
   }
 
   const gd = new GoogleDrive(self.props);
-  const HTML = `<!DOCTYPE html><html class="no-js localstorage geolocation canvas audio video texttrackapi track flexbox mediaqueries cssanimations blobconstructor blob-constructor formvalidation fieldsetdisabled no-csstrackrange no-cssrangeinput no-styleableinputrange details" js-focus-visible-polyfill-available="" lang="en-US"><head><meta charset=utf-8><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${self.props.title}</title><link rel="stylesheet" href="/~_~_gdindex/resources/css/app.css"></head><body><script>window.props = { title: '${self.props.title}', default_root_id: '${self.props.default_root_id}', api: location.protocol + '//' + location.host, upload: ${self.props.upload} }<\/script><div id=app></div><script src="/~_~_gdindex/resources/js/app.js"><\/script></body></html>`;
+  const HTML = `<!DOCTYPE html><html lang="en-US"><head><meta charset=utf-8><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${self.props.title}</title><link rel="stylesheet" href="/~_~_gdindex/resources/css/app.css"></head><body><script>window.props = { title: '${self.props.title}', default_root_id: '${self.props.default_root_id}', api: location.protocol + '//' + location.host, upload: ${self.props.upload} }<\/script><div id=app></div><script src="/~_~_gdindex/resources/js/app.js"><\/script></body></html>`;
 
   async function onGet(request) {
     let {

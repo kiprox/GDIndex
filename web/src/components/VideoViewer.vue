@@ -21,6 +21,7 @@ import api from '../api'
 
 const MIME = {
 	mp4: 'video/mp4',
+	mkv: 'video/x-matroska',
 }
 function checkExists(url) {
 	const ct = new AbortController()

@@ -65,7 +65,7 @@
 								download
 								@click.stop
 							>
-								<v-icon color="black">
+								<v-icon color="green">
 									mdi-file-download
 								</v-icon>
 							</v-btn>

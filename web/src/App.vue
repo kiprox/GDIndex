@@ -14,7 +14,7 @@
 						<v-btn text v-on="on" class="text-none">
 							<v-icon>mdi-database</v-icon>&nbsp;{{
 								currentDrive.text
-							}}<v-icon>mdi-menu-down</v-icon>
+							}}<v-icon>mdi-arrow-down</v-icon>
 						</v-btn>
 					</template>
 					<v-list>

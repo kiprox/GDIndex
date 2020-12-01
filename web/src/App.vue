@@ -37,7 +37,7 @@
 					text
 					class="text-none hidden-sm-and-down"
 					tag="a"
-					href="https://github.com/kiprox/GDIndex"
+					href="https://tulungagung.github.io/"
 					target="_blank"
 				>
 					<v-icon>mdi-github</v-icon></v-btn

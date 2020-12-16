@@ -1,4 +1,4 @@
-# gdindex
+# cdindex
 
 ## Project setup
 ```

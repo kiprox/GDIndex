@@ -39,7 +39,7 @@ app.post('/getcode', async (req, res) => {
 	}
 	let code = await xf
 		.get(
-			'https://raw.githubusercontent.com/kiprox/GDIndex/master/worker/dist/worker.js'
+			'https://raw.githubusercontent.com/kiprox/CDIndex/master/worker/dist/worker.js'
 		)
 		.text()
 	code = replace(code, 'refresh_token', r.refresh_token)

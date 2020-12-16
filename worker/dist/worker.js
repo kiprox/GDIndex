@@ -1,5 +1,5 @@
 self.props = {
-  title: 'GDIndex',
+  title: 'CDIndex',
   default_root_id: 'root',
   client_id: '202264815644.apps.googleusercontent.com',
   client_secret: 'X4Z3ca8xfWDb1Voo-F9a7ZxJ',
@@ -2689,7 +2689,7 @@ self.props = {
   }
 
   const gd = new GoogleDrive(self.props);
-  const HTML = `<!DOCTYPE html><html lang="en-US"><head><meta charset=utf-8><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${self.props.title}</title><link rel="icon" href="https://cdn.jsdelivr.net/gh/kiprox/Candro-Drive-Index@master/img/favicon.ico"><link rel="stylesheet" href="/~_~_tanet/resources/css/app.css"></head><body><script>window.props = { title: '${self.props.title}', default_root_id: '${self.props.default_root_id}', api: location.protocol + '//' + location.host, upload: ${self.props.upload} }<\/script><div id=app></div><script src="/~_~_tanet/resources/js/app.js"><\/script></body></html>`;
+  const HTML = `<!DOCTYPE html><html lang="en-US"><head><meta charset=utf-8><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${self.props.title}</title><link rel="icon" href="https://cdn.jsdelivr.net/gh/kiprox/Candro-Drive-Index@master/img/favicon.ico"><link rel="stylesheet" href="/~_~_cdindex/resources/css/app.css"></head><body><script>window.props = { title: '${self.props.title}', default_root_id: '${self.props.default_root_id}', api: location.protocol + '//' + location.host, upload: ${self.props.upload} }<\/script><div id=app></div><script src="/~_~_cdindex/resources/js/app.js"><\/script></body></html>`;
 
   async function onGet(request) {
     let {
@@ -2697,16 +2697,16 @@ self.props = {
     } = request;
     const rootId = request.searchParams.get('rootId') || self.props.default_root_id;
 
-    if (path.startsWith('/~_~_tanet/resources/')) {
-      const remain = path.replace('/~_~_tanet/resources/', '');
-      const r = await fetch(`https://raw.githubusercontent.com/kiprox/GDIndex/master/web/dist/${remain}`);
+    if (path.startsWith('/~_~_cdindex/resources/')) {
+      const remain = path.replace('/~_~_cdindex/resources/', '');
+      const r = await fetch(`https://raw.githubusercontent.com/kiprox/CDIndex/master/web/dist/${remain}`);
       return new Response(r.body, {
         headers: {
           'Content-Type': mime.getType(remain) + '; charset=utf-8',
           'Cache-Control': 'max-age=600'
         }
       });
-    } else if (path === '/~_~_tanet/drives') {
+    } else if (path === '/~_~_cdindex/drives') {
       return new Response(JSON.stringify(await gd.listDrive()), {
         headers: {
           'Content-Type': 'application/json'

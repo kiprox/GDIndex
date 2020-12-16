@@ -1,12 +1,12 @@
 
 ![preview](https://i.imgur.com/U2o8UBw.png)
 
-> GDIndex is similar to [GOIndex](https://github.com/donwa/goindex).
+> CDIndex is similar to [GOIndex](https://github.com/donwa/goindex).
 > It allows you to deploy a "Google Drive Index" on CloudFlare Workers along with many extra features
 >
 > By the way, instead of modify from GOIndex, this is a total rewrite
 
-## Difference between GOIndex and GDIndex
+## Difference between GOIndex and CDIndex
 
 -   Frontend is based on Vue.js
 -   Image viewer doesn't require opening new page
